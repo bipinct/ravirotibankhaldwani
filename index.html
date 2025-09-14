@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ravi Roti Bank - Serving Humanity & Animals</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -14,10 +14,11 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #2c3e50;
+            font-family: 'Source Serif Pro', serif;
+            line-height: 1.7;
+            color: #1a2332;
             overflow-x: hidden;
+            font-weight: 400;
         }
 
         .container {
@@ -46,13 +47,14 @@
         }
 
         .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
             font-weight: 600;
             display: flex;
             align-items: center;
             gap: 12px;
-            color: #2c3e50;
+            color: #1a2332;
+            letter-spacing: 0.5px;
         }
 
         .logo img {
@@ -67,12 +69,13 @@
         }
 
         .nav-links a {
-            color: #2c3e50;
+            color: #1a2332;
             text-decoration: none;
             font-weight: 500;
             font-size: 0.95rem;
             transition: all 0.3s ease;
             position: relative;
+            font-family: 'Inter', sans-serif;
         }
 
         .nav-links a::after {
@@ -82,7 +85,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: #e74c3c;
+            background: linear-gradient(90deg, #d4af37, #b8860b);
             transition: width 0.3s ease;
         }
 
@@ -91,12 +94,12 @@
         }
 
         .nav-links a:hover {
-            color: #e74c3c;
+            color: #d4af37;
         }
 
         /* Professional Image Gallery */
         .gallery-section {
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             padding: 100px 0 80px;
             margin-top: 80px;
         }
@@ -107,19 +110,21 @@
         }
 
         .gallery-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.8rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
             font-weight: 600;
-            color: #2c3e50;
+            color: #1a2332;
             margin-bottom: 1rem;
+            letter-spacing: 0.5px;
         }
 
         .gallery-subtitle {
-            font-size: 1.1rem;
-            color: #6c757d;
+            font-size: 1.2rem;
+            color: #5a6c7d;
             max-width: 600px;
             margin: 0 auto;
-            line-height: 1.6;
+            line-height: 1.7;
+            font-weight: 300;
         }
 
         .gallery-grid {
@@ -131,17 +136,19 @@
 
         .gallery-item {
             position: relative;
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(26, 35, 50, 0.12);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             background: white;
             aspect-ratio: 4/3;
+            border: 1px solid rgba(212, 175, 55, 0.1);
         }
 
         .gallery-item:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+            transform: translateY(-12px);
+            box-shadow: 0 20px 60px rgba(26, 35, 50, 0.2);
+            border-color: rgba(212, 175, 55, 0.3);
         }
 
         .gallery-item img {
@@ -258,7 +265,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            background: linear-gradient(135deg, #1a2332 0%, #2c3e50 50%, #34495e 100%);
             color: white;
             padding: 140px 0 100px;
             text-align: center;
@@ -283,29 +290,34 @@
         }
 
         .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
             animation: fadeInUp 1s ease;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         .hero .subtitle {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin-bottom: 2rem;
-            opacity: 0.9;
+            opacity: 0.95;
             animation: fadeInUp 1s ease 0.2s both;
-            font-weight: 400;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            color: #d4af37;
         }
 
         .hero .mission {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             max-width: 700px;
             margin: 0 auto 3rem;
-            line-height: 1.7;
+            line-height: 1.8;
             animation: fadeInUp 1s ease 0.4s both;
             font-weight: 300;
-            opacity: 0.95;
+            opacity: 0.9;
+            letter-spacing: 0.3px;
         }
 
         .cta-buttons {
@@ -331,31 +343,35 @@
         }
 
         .btn-primary {
-            background: #e74c3c;
+            background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
             color: white;
+            border: none;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
         }
 
         .btn-primary:hover {
-            background: #c0392b;
+            background: linear-gradient(135deg, #b8860b 0%, #d4af37 100%);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
         }
 
         .btn-secondary {
             background: transparent;
             color: white;
-            border: 2px solid white;
+            border: 2px solid #d4af37;
+            backdrop-filter: blur(10px);
         }
 
         .btn-secondary:hover {
-            background: white;
-            color: #2c3e50;
+            background: #d4af37;
+            color: #1a2332;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
         }
 
         /* Stats Section */
         .stats {
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             padding: 80px 0;
         }
 
@@ -378,17 +394,18 @@
 
         .stat-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            border-color: #e74c3c;
+            box-shadow: 0 15px 35px rgba(26, 35, 50, 0.15);
+            border-color: #d4af37;
         }
 
         .stat-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.2rem;
             font-weight: 600;
-            color: #e74c3c;
+            color: #d4af37;
             margin-bottom: 0.5rem;
             display: block;
+            letter-spacing: 0.5px;
         }
 
         .stat-label {
@@ -404,13 +421,14 @@
         }
 
         .section-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 600;
-            color: #2c3e50;
+            color: #1a2332;
             margin-bottom: 3rem;
             position: relative;
+            letter-spacing: 0.5px;
         }
 
         .section-title::after {
@@ -419,9 +437,9 @@
             bottom: -10px;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
+            width: 80px;
             height: 3px;
-            background: #e74c3c;
+            background: linear-gradient(90deg, #d4af37, #b8860b);
             border-radius: 2px;
         }
 
@@ -435,12 +453,12 @@
         .activity-card {
             background: white;
             padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(26, 35, 50, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
-            border: 1px solid #e9ecef;
+            border: 1px solid rgba(212, 175, 55, 0.1);
         }
 
         .activity-card::before {
@@ -450,7 +468,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: #e74c3c;
+            background: linear-gradient(90deg, #d4af37, #b8860b);
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.3s ease;
@@ -462,34 +480,37 @@
 
         .activity-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-            border-color: #e74c3c;
+            box-shadow: 0 20px 60px rgba(26, 35, 50, 0.15);
+            border-color: rgba(212, 175, 55, 0.3);
         }
 
         .activity-icon {
             font-size: 3rem;
-            color: #e74c3c;
+            color: #d4af37;
             margin-bottom: 1.5rem;
             display: block;
+            text-shadow: 0 2px 4px rgba(212, 175, 55, 0.2);
         }
 
         .activity-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
             font-weight: 600;
-            color: #2c3e50;
+            color: #1a2332;
             margin-bottom: 1rem;
+            letter-spacing: 0.3px;
         }
 
         .activity-description {
-            color: #6c757d;
-            line-height: 1.6;
+            color: #5a6c7d;
+            line-height: 1.7;
             font-weight: 400;
+            font-size: 1.05rem;
         }
 
         /* Impact Section */
         .impact {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            background: linear-gradient(135deg, #1a2332 0%, #2c3e50 50%, #34495e 100%);
             color: white;
             padding: 80px 0;
             text-align: center;
@@ -501,23 +522,26 @@
         }
 
         .impact h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.8rem;
             font-weight: 600;
             margin-bottom: 2rem;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         .impact p {
-            font-size: 1.1rem;
-            line-height: 1.7;
+            font-size: 1.2rem;
+            line-height: 1.8;
             margin-bottom: 2rem;
             font-weight: 300;
-            opacity: 0.95;
+            opacity: 0.9;
+            letter-spacing: 0.3px;
         }
 
         /* Events & News Section */
         .events-news {
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             padding: 80px 0;
         }
 
@@ -530,20 +554,20 @@
 
         .event-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border: 1px solid #e9ecef;
+            box-shadow: 0 8px 32px rgba(26, 35, 50, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(212, 175, 55, 0.1);
         }
 
         .event-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            box-shadow: 0 20px 60px rgba(26, 35, 50, 0.15);
         }
 
         .event-date {
-            background: #e74c3c;
+            background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
             color: white;
             padding: 1rem;
             text-align: center;
@@ -555,29 +579,32 @@
         }
 
         .event-title {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 600;
-            color: #2c3e50;
+            color: #1a2332;
             margin-bottom: 1rem;
+            font-family: 'Cormorant Garamond', serif;
+            letter-spacing: 0.3px;
         }
 
         .event-description {
-            color: #6c757d;
-            line-height: 1.6;
+            color: #5a6c7d;
+            line-height: 1.7;
             margin-bottom: 1rem;
+            font-size: 1.05rem;
         }
 
         .event-meta {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            color: #e74c3c;
+            color: #d4af37;
             font-size: 0.9rem;
         }
 
         /* Instagram Feed Section */
         .instagram-feed {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            background: linear-gradient(135deg, #1a2332 0%, #2c3e50 50%, #34495e 100%);
             padding: 80px 0;
             color: white;
         }
@@ -614,7 +641,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background: #e74c3c;
+            background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -638,7 +665,7 @@
         .post-image {
             width: 100%;
             height: 150px;
-            background: #e74c3c;
+            background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
             border-radius: 12px;
             margin-bottom: 1rem;
             display: flex;
@@ -662,7 +689,7 @@
 
         /* Contact Section */
         .contact {
-            background: white;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
             padding: 80px 0;
         }
 
@@ -673,10 +700,12 @@
         }
 
         .contact-info h3 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 600;
-            color: #2c3e50;
+            color: #1a2332;
             margin-bottom: 2rem;
+            font-family: 'Cormorant Garamond', serif;
+            letter-spacing: 0.5px;
         }
 
         .contact-items {
@@ -692,26 +721,28 @@
             justify-content: center;
             gap: 1rem;
             padding: 1.5rem;
-            background: #f8f9fa;
+            background: white;
             border-radius: 12px;
             transition: all 0.3s ease;
-            border: 1px solid #e9ecef;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            box-shadow: 0 4px 20px rgba(26, 35, 50, 0.05);
         }
 
         .contact-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 12px 35px rgba(26, 35, 50, 0.1);
+            border-color: rgba(212, 175, 55, 0.3);
         }
 
         .contact-item i {
             font-size: 1.5rem;
-            color: #e74c3c;
+            color: #d4af37;
             width: 30px;
         }
 
         /* Footer */
         footer {
-            background: #2c3e50;
+            background: linear-gradient(135deg, #1a2332 0%, #2c3e50 100%);
             color: white;
             padding: 40px 0;
             text-align: center;
@@ -737,7 +768,7 @@
         }
 
         .social-links a:hover {
-            color: #e74c3c;
+            color: #d4af37;
             transform: translateY(-2px);
         }
 
@@ -1197,14 +1228,14 @@
         <div class="container">
             <h2 class="section-title" style="color: white;">Follow Our Journey</h2>
             <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">
-                Stay connected with our daily activities and inspiring stories from <a href="https://www.instagram.com/bipin_ct/" target="_blank" style="color: #DAA520; text-decoration: none;">@bipin_ct</a>
+                Stay connected with our daily activities and inspiring stories from <a href="https://www.instagram.com/missionrotibank/" target="_blank" style="color: #DAA520; text-decoration: none;">@missionrotibank</a>
             </p>
             
             <!-- Instagram Profile Embed -->
             <div style="display: flex; justify-content: center; margin-bottom: 3rem;">
-                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/bipin_ct/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/missionrotibank/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                     <div style="padding:16px;">
-                        <a href="https://www.instagram.com/bipin_ct/" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                        <a href="https://www.instagram.com/missionrotibank/" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
                             <div style="display: flex; flex-direction: row; align-items: center;">
                                 <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
                                 <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
@@ -1250,7 +1281,7 @@
                             </div>
                         </a>
                         <p style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                            <a href="https://www.instagram.com/bipin_ct/" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A profile shared by Bipin CT (@bipin_ct)</a>
+                            <a href="https://www.instagram.com/missionrotibank/" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A profile shared by Bipin CT (@missionrotibank)</a>
                         </p>
                     </div>
                 </blockquote>
@@ -1262,7 +1293,7 @@
                     <div class="post-header">
                         <div class="post-avatar">BC</div>
                         <div class="post-info">
-                            <h4>@bipin_ct</h4>
+                            <h4>@missionrotibank</h4>
                             <p>Recent Post</p>
                         </div>
                     </div>
@@ -1282,7 +1313,7 @@
                     <div class="post-header">
                         <div class="post-avatar">BC</div>
                         <div class="post-info">
-                            <h4>@bipin_ct</h4>
+                            <h4>@missionrotibank</h4>
                             <p>Latest Reel</p>
                         </div>
                     </div>
@@ -1302,7 +1333,7 @@
                     <div class="post-header">
                         <div class="post-avatar">BC</div>
                         <div class="post-info">
-                            <h4>@bipin_ct</h4>
+                            <h4>@missionrotibank</h4>
                             <p>Stories</p>
                         </div>
                     </div>
@@ -1322,7 +1353,7 @@
                     <div class="post-header">
                         <div class="post-avatar">BC</div>
                         <div class="post-info">
-                            <h4>@bipin_ct</h4>
+                            <h4>@missionrotibank</h4>
                             <p>Highlights</p>
                         </div>
                     </div>
@@ -1360,7 +1391,7 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+91 XXX XXX XXXX</span>
+                        <span>+91-9536290333</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -1383,10 +1414,8 @@
                     <p>&copy; 2024 Ravi Roti Bank. All rights reserved.</p>
                 </div>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/bipin_ct/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/MissionRotiBank/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/missionrotibank/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
